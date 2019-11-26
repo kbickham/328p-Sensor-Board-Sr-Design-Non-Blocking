@@ -7,7 +7,7 @@ comms with the display, updates thingspeak via POST method, updates fans and hea
 
 This uses hardware uart to send structs (eztransfer library) to an esp8266.
 The concept is that you put one sensor read command in each of the switch case "states".
-Then call the function containing this "state ladder" ever loop in the main program, 
+Then call the function containing this "state ladder" every loop in the main program, 
 using the regular non blocking approach in arudino IDE:
   if( millis() - variable  >= timeconstraint >= approach)
                         { do stuff;
