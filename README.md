@@ -1,5 +1,5 @@
 # 328pSensorBoard
-328p non blocking code running a sensor array of 4 (MLX90614) IR sensors, 3 DHT22s, and barometer.
+328p non blocking code running a sensor array of 4 (MLX90614) IR sensors, 3 DHT22s, and barometer. Below can be seen the first iteration of the sensor array. Here is seen an AS7263 NIR Spectrometer, which was ultimately not included in the final device implementation.
 ![First protype of sensor array](https://github.com/kbickham/328pSensorBoard/blob/master/sensorsarraysupport.jpg)
 
 
