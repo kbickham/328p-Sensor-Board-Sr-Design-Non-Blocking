@@ -1,5 +1,7 @@
 # 328pSensorBoard
 328p non blocking code running a sensor array of 4 (MLX90614) IR sensors, 3 DHT22s, and barometer.
+![First protype of sensor array](https://github.com/kbickham/328pSensorBoard/blob/master/sensorsarraysupport.jpg)
+
 
 The timing on the DHTs is a little wierd...it's something like 20 usecs high for 0, and 70 usec high for 1. They can't
 be queried faster than 0.5hz or they'll stop responding.I had some issues integrating the timing with my main controller
@@ -16,7 +18,10 @@ using the regular non blocking approach in arudino IDE:
                         };
                       
 Allows for the utilization of other code on the processor.
-In sufficiently complex systems you really can't use the delay command in the ms range.        
+In sufficiently complex systems you really can't use the delay command in the ms range.     
+
+On the far left in th DIP package, the 328p driving this can be seen
+![Total sysem image](https://github.com/kbickham/4Dsystems8266heatsys/blob/master/PowerBControlBsensorBtop.jpg)
 
 video of my project is here:
 https://www.youtube.com/watch?v=EiXSyNlM34c
